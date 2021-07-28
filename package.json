@@ -1,0 +1,15 @@
+{
+  "name": "piggame",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Pratham Jain",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.0.0-beta.2"
+  }
+}

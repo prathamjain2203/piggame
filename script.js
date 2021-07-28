@@ -17,9 +17,8 @@ const switchPlayer = function () {
   document
     .querySelector(`.player--${activeplayer}`)
     .classList.remove('player--active');
-  document.querySelector(
-    `#current--${activeplayer}`
-  ).textContent = currentscore;
+  document.querySelector(`#current--${activeplayer}`).textContent =
+    currentscore;
   activeplayer = activeplayer === 0 ? 1 : 0;
   document
     .querySelector(`.player--${activeplayer}`)
@@ -40,9 +39,8 @@ btnroll.addEventListener('click', function () {
     if (dice !== 1) {
       currentscore += dice;
 
-      document.querySelector(
-        `#current--${activeplayer}`
-      ).textContent = currentscore;
+      document.querySelector(`#current--${activeplayer}`).textContent =
+        currentscore;
     } else {
       switchPlayer();
     }
@@ -54,7 +52,7 @@ btnhold.addEventListener('click', function () {
     scores[activeplayer] += currentscore;
     document.getElementById(`score--${activeplayer}`).textContent =
       scores[activeplayer];
-    if (scores[activeplayer] >= 10) {
+    if (scores[activeplayer] >= 30) {
       playing = false;
       document
         .querySelector(`.player--${activeplayer}`)

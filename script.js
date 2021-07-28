@@ -52,7 +52,7 @@ btnhold.addEventListener('click', function () {
     scores[activeplayer] += currentscore;
     document.getElementById(`score--${activeplayer}`).textContent =
       scores[activeplayer];
-    if (scores[activeplayer] >= 30) {
+    if (scores[activeplayer] >= 20) {
       playing = false;
       document
         .querySelector(`.player--${activeplayer}`)
